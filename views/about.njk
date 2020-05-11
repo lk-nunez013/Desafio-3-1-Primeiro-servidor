@@ -1,13 +1,18 @@
 {% extends "layout.njk" %}
 
+{% block head %}
+    <title>Grupo Sobreaviso</title>
+    <link rel="stylesheet" href="/style.css">
+{% endblock %}
+
 {% block content %}
   <div id="wrapper">
     <img
-      src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/94404581_3026305420782671_5276380439966121984_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_eui2=AeEckVysnXmX_H3UQdyPLm5zoQrA80p36QGhCsDzSnfpAbwUvRh1frtfMjZfejw5dwsV6CSZE_vbvTcL-J7Xz1op&_nc_ohc=LSyPSADfKN8AX_q0dp2&_nc_ht=scontent-gru2-1.xx&oh=82e7cd471fd4a34d1f49fc30e7e930ae&oe=5ED75682"
-      alt="Lucas Dos Santos">
-    <h1>Lucas Dos Santos</h1>
-    <h2>Vocalista do Grupo T.A.S Sobreaviso</h2>
-    <p>Desde os 9 anos faz parte do grupo, Lucas possui skills de R&B, flipada, punchline, speedflow.</p>
+      src="{{about.avatar_url}}"
+      alt="Foto de {{about.name}}">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.role}}</h2>
+    <p>{{about.description}}</p>
   <div class="social">
     <a href="https://www.instagram.com/lk_sobreaviso/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
       width="50" height="50"

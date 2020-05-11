@@ -48,7 +48,6 @@ nav.links a:hover {
 }
 
 #wrapper h1{
-  margin:20px;
   font-size: 40px;
   font-weight: 900;
   color:#7fcd91;
@@ -109,8 +108,8 @@ footer a:hover{
   cursor: pointer;
 }
 
-.img-ctn{
-  max-width: 100%;
+.featured-wrapper.img-ctn{
+  position: relative;
 }
 
 .img-ctn img{
@@ -202,4 +201,44 @@ iframe {
 .text a {
   text-decoration: none;
   color: #d3d3d3;
+}
+
+/* === Featured === */
+.featured {
+  background: #f7d05f;
+  color:#111;
+  padding: 2px 8px;
+  position: absolute;
+  right: 5px;
+  top:-10px;
+  border-radius: 16px;
+}
+
+/* === video page === */
+.video {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.card-video{
+  width: 100%;
+  background-color:#7fcd91;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card_video-container{
+  position: relative;
+  max-width: 800px;
+  padding-top: 62.5%;
+}
+
+.card_video-container iframe{
+  border-radius: 6px 6px 0 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
 }
